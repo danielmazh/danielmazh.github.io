@@ -1,0 +1,22 @@
+import{g as r}from"./index.CzGW6FVa.js";import{s as u,b as p,d as z,e as w}from"./minor-art.DWVZ5Lsh.js";import{s as y,t as x}from"./story.BGBw0qPS.js";import{p as g}from"./types.Bt8bDdG2.js";const b=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 328 328" aria-hidden="true">
+<rect data-n="ground" width="328" height="328" fill="rgb(169, 199, 143)"/>
+<g data-n="Wall in shade, late afternoon"><path d="M214-6l126 0 0 178-40 0z" fill="#95B67C"/></g>
+<g data-n="Window glass"><path d="M-8-8l136 0 0 124-136 0z" fill="#F4EEA2"/></g>
+<g data-n="Window frame"><path d="M-8-8l136 0 0 124-136 0z m70 0l0 124m-70-66l136 0" fill="none" stroke="#2F5A3E" stroke-width="5.5"/></g>
+<g data-n="Sill"><path d="M-8 116l148 0 0 10-148 0z" fill="#2F5A3E"/></g>
+<g data-n="Table"><path d="M0 184l328-16 0 160-328 0z" fill="#2F5A3E"/></g>
+<g data-n="Light from the window, long across the table"><path d="M16 193l100-6 226 41 0 34z m110-7l56-3 160 23 0 12z" fill="#F4EEA2"/></g>
+<g data-n="Plant, long blades"><path d="M48 142q-20-50-38-90 30 40 50 90z m5 0q-2-58-9-128 21 70 23 128z m8 0q10-58 35-118-11 60-21 118z m7 0q34-50 74-70-28 20-62 70z m-9 0q48-84 97-24-39-60-87 24z" fill="#2F5A3E"/></g>
+<g data-n="Plant shadow in the light"><path d="M107 206q22-2 71 0-43-2-65 0z m1.5 4q24 2 61.5 12-30.5-10-54.5-12z m-3.5 2q20 10 45 16-19-6-39-16z" fill="#A9C78F"/></g>
+<g data-n="Pot"><path d="M38 140l54 0-6 62-42 0z" fill="#FFF8D8"/></g>
+<g data-n="Pot shade"><path d="M70 140l22 0-6 62-18 0z" fill="#C9CC86"/></g>
+<g data-n="Cup long shadow"><path d="M258 228l84 16 0 18-84-19z" fill="#2F5A3E"/></g>
+<g data-n="Cup handle"><path d="M263 190c33-4 33 38-4 34" fill="none" stroke="#C9CC86" stroke-width="8"/></g>
+<g data-n="Cup"><path d="M194 176l74 0-7 60c-3 14-57 14-60 0z" fill="#FFF8D8"/></g>
+<g data-n="Cup shade"><path d="M240 176l28 0-7 60c-2 7-13 10-23 11z" fill="#C9CC86"/></g>
+<g data-n="Cup rim"><ellipse cx="231" cy="176.5" rx="37" ry="7.5" fill="rgb(255, 248, 216)"/></g>
+<g data-n="Coffee"><ellipse cx="231" cy="177" rx="31" ry="5" fill="rgb(31, 59, 42)"/></g>
+<g data-n="Tiny waveform"><path d="M272 24.5l2 0 0 3-2 0z m4.4-2l2 0 0 7-2 0z m4.4-2.5l2 0 0 12-2 0z m4.4 3.5l2 0 0 5-2 0z m4.4-5l2 0 0 15-2 0z m4.4 3l2 0 0 9-2 0z m4.4 2.5l2 0 0 4-2 0z m4.4-3.5l2 0 0 11-2 0z m4.4 2.5l2 0 0 6-2 0z m4.4 1.5l2 0 0 3-2 0z" fill="#2F5A3E"/></g>
+<g data-n="Subtitle"><text font-family="IBM Plex Sans" font-size="22" font-weight="700" text-anchor="middle" fill="rgb(255, 255, 255)"><tspan x="163.99" y="279">so I called back</tspan><tspan x="164" y="304">the next morning</tspan></text></g>
+</svg>
+`,d={en:[["I almost let it ring","and went back to bed"],["then I saw the message","and read it twice"],["so I called back","the next morning"]],he:[["כמעט נתתי לזה לצלצל","וחזרתי לישון"],["ואז ראיתי את ההודעה","וקראתי אותה פעמיים"],["אז חזרתי אליהם","למחרת בבוקר"]]};function c(e,t){const n=z(e,b);return t==="he"&&n.say("Subtitle",d.he[2]??[],{he:!0,anchor:"middle",x:164,weight:600}),n}function f(e,t,n){const o=e.n("Subtitle"),a=o.cloneNode(!0);a.removeAttribute("data-n"),o.after(a);const l=a.querySelector("text");return l&&w(l,n,t==="he"?{he:!0,anchor:"middle",x:164}:{}),a}function m(e,t,n,o){e.fromTo(t.n("Tiny waveform"),{scaleY:.4,transformOrigin:"50% 50%"},{scaleY:1,transformOrigin:"50% 50%",duration:.22,repeat:o,yoyo:!0,ease:"sine.inOut"},n)}function E(e,t){t=g(t,"en");const n=c(e,t.lang);if(t.reduced)return p(e);const o=f(n,t.lang,d[t.lang][1]??[]);r.set(o,{opacity:0});const a=r.timeline({paused:!0});return m(a,n,0,4),a.fromTo(o,{opacity:1},{opacity:0,duration:.2,ease:"none"},.75),a.fromTo(n.n("Subtitle"),{opacity:0},{opacity:1,duration:.2,ease:"none"},.95),x(e,a)}function T(e,t){t=g(t,"en");const n=c(e,t.lang);if(t.reduced)return u(e);const o=d[t.lang].slice(0,2).map(i=>f(n,t.lang,i));r.set(o,{opacity:0});const a=r.timeline({paused:!0}),l=2.2;m(a,n,0,2*Math.ceil(3*l/.44)),o.forEach((i,s)=>{a.fromTo(i,{opacity:0},{opacity:1,duration:.18,ease:"none"},s*l),a.to(i,{opacity:0,duration:.18,ease:"none"},(s+1)*l-.1)}),a.fromTo(n.n("Subtitle"),{opacity:0},{opacity:1,duration:.18,ease:"none"},2*l+.1);const h=[n.n("Light from the window, long across the table"),n.n("Plant shadow in the light")];return a.fromTo(h,{skewX:8,x:-22,transformOrigin:"0 0"},{skewX:0,x:0,transformOrigin:"0 0",duration:3*l,ease:"none"},0),a.fromTo(n.n("Cup long shadow"),{scaleX:.7,transformOrigin:"0 50%"},{scaleX:1,transformOrigin:"0 50%",duration:3*l,ease:"none"},0),y(n.root,e,a)}export{T as mount,E as mountTile};
