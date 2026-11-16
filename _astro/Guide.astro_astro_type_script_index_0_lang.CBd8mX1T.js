@@ -1,0 +1,2 @@
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["_astro/panel.DfZoUptw.js","_astro/routes.Bn1gpkqC.js"])))=>i.map(i=>d[i]);
+import{_ as o}from"./preload-helper.BlTxHScW.js";document.addEventListener("click",t=>{if(!(t.target instanceof Element)||!t.target.closest("[data-guide-open]"))return;document.querySelector("#site-menu[open]")?.close();const n=document.documentElement.lang==="he"?"he":"en";o(async()=>{const{openGuide:e}=await import("./panel.DfZoUptw.js");return{openGuide:e}},__vite__mapDeps([0,1])).then(({openGuide:e})=>e(n))});
